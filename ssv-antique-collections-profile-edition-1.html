@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10140f"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="description" content="SSV Antique Collections — vintage jewellery with a story to tell.">
+<title>SSV Antique Collections | Timeless Treasures</title>
+<style>
+:root{--night:#171b14;--night2:#20251b;--gold:#c9a76a;--gold2:#ead7ad;--ivory:#f5f0e6;--paper:#e9e0d0;--muted:#aaa795;--line:#454438;--serif:Georgia,'Times New Roman',serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--night);color:var(--ivory);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}.wrap{width:min(1180px,calc(100% - 44px));margin:auto}
+.announcement{background:var(--gold);color:#1b1c13;text-align:center;padding:9px 12px;font-size:10px;letter-spacing:1.8px;text-transform:uppercase;font-weight:800}
+header{position:sticky;top:0;z-index:30;background:#171b14ed;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff14}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{text-decoration:none;display:flex;align-items:center;gap:12px}.monogram{width:43px;height:43px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font:italic 19px var(--serif);letter-spacing:-2px}.brandtext{font:20px var(--serif);letter-spacing:.3px}.brandtext small{display:block;color:var(--gold);font:9px system-ui;letter-spacing:3.1px;text-transform:uppercase;margin-top:4px}.navlinks{display:flex;align-items:center;gap:29px}.navlinks a{text-decoration:none;color:#d1cbbd;font-size:12px;letter-spacing:.7px;transition:color .2s}.navlinks a:hover{color:var(--gold)}.bag-btn{border:1px solid #756342;background:transparent;color:var(--ivory);padding:11px 15px;display:flex;align-items:center;gap:9px;font-size:12px;letter-spacing:.6px}.bag-count{background:var(--gold);color:#171b14;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:11px}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid #ffffff12;background:radial-gradient(ellipse at 78% 40%,#3b3825 0,transparent 42%),linear-gradient(110deg,#171b14 0%,#1c2118 55%,#26291e 100%)}.hero-grid{min-height:600px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:34px;padding-top:45px;padding-bottom:45px}.hero-copy{position:relative;z-index:2;animation:fadeUp .8s both}.eyebrow{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase}.eyebrow:before{content:"";width:34px;height:1px;background:var(--gold)}h1{font:clamp(48px,6.4vw,82px)/.99 var(--serif);font-weight:400;letter-spacing:-2.6px;margin:27px 0 22px;max-width:620px}h1 em{color:var(--gold);font-weight:400}.hero-copy p{font-size:14px;line-height:1.9;color:#c0bdae;max-width:425px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:31px}.btn-gold,.btn-outline{padding:15px 20px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:850;transition:transform .2s,background .2s;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:15px}.btn-gold{background:var(--gold);color:#171b14;border:1px solid var(--gold)}.btn-outline{border:1px solid #8c805f;color:var(--ivory);background:transparent}.btn-gold:hover,.btn-outline:hover{transform:translateY(-3px)}.btn-gold:hover{background:var(--gold2)}.hero-note{margin-top:36px;color:#9d9a88;font-size:10px;letter-spacing:1.2px;display:flex;align-items:center;gap:10px}.hero-note span{color:var(--gold);font-size:15px}
+.hero-visual{min-height:475px;position:relative;display:grid;place-items:center;animation:fadeUp .9s .12s both}.halo{position:absolute;width:min(410px,88%);aspect-ratio:1;border:1px solid #c9a76a55;border-radius:50%;box-shadow:0 0 0 22px #c9a76a09,0 0 0 54px #c9a76a08}.halo:before,.halo:after{content:"";position:absolute;border:1px solid #c9a76a28;border-radius:50%;inset:13%}.halo:after{inset:27%}.jewel-stage{position:relative;width:min(410px,90%);aspect-ratio: .88;display:grid;place-items:center;border:1px solid #c9a76a44;background:linear-gradient(145deg,#4a432d,#24281d 65%,#171b14);box-shadow:0 30px 80px #0008;overflow:hidden}.jewel-stage:before{content:"";position:absolute;inset:13px;border:1px solid #c9a76a40}.jewel-stage:after{content:"";position:absolute;width:70%;height:70%;border-radius:50%;background:radial-gradient(circle,#c9a76a18,transparent 70%)}.necklace{position:relative;z-index:1;width:68%;height:72%;border:5px solid transparent;border-left-color:#c7a45e;border-bottom-color:#c7a45e;border-right-color:#c7a45e;border-radius:0 0 50% 50%;transform:rotate(0deg);filter:drop-shadow(0 5px 7px #0009)}.necklace:before{content:"";position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);width:57px;height:70px;border:4px solid #d2b16c;border-radius:45% 45% 55% 55%;background:linear-gradient(135deg,#7d2524,#3b1116 55%,#9e5634);box-shadow:inset 0 0 0 5px #b98b4e,0 8px 15px #0008}.necklace:after{content:"✦";position:absolute;bottom:7px;left:50%;transform:translateX(-50%);font-size:28px;color:#f0d6a0;text-shadow:0 0 10px #e9c777}.stage-label{position:absolute;z-index:3;bottom:30px;left:0;right:0;text-align:center;color:#e4c98c;font:italic 15px var(--serif);letter-spacing:2px}.float-card{position:absolute;z-index:4;background:#1d2119ed;border:1px solid #c9a76a66;padding:13px 16px;box-shadow:0 15px 40px #0004}.float-card small{display:block;color:#b9b09b;font-size:9px;letter-spacing:1.5px;text-transform:uppercase}.float-card strong{display:block;color:var(--gold2);font:italic 16px var(--serif);margin-top:5px}.float-a{left:0;top:12%}.float-b{right:-2px;bottom:13%}
+.section{padding:88px 0}.section-head{text-align:center;margin-bottom:34px}.overline{color:var(--gold);font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase}.section-head h2{font:clamp(34px,4.5vw,52px)/1.1 var(--serif);font-weight:400;letter-spacing:-1px;margin:13px 0}.section-head p{font-size:13px;color:#aaa795;line-height:1.8;margin:0 auto;max-width:530px}.divider-ornament{display:flex;align-items:center;justify-content:center;gap:13px;color:var(--gold);margin-top:18px}.divider-ornament:before,.divider-ornament:after{content:"";width:42px;height:1px;background:#756342}
+.filters{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 0 25px}.filter{border:1px solid #454438;background:transparent;color:#c4bdad;padding:10px 15px;font-size:10px;letter-spacing:1px;text-transform:uppercase}.filter.active,.filter:hover{background:var(--gold);border-color:var(--gold);color:#171b14}.tools{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:22px}.results{font-size:11px;color:#a9a593;letter-spacing:.7px}.search{display:flex;align-items:center;gap:8px;border-bottom:1px solid #6b6049;padding:0 3px;width:220px}.search span{color:var(--gold);font-size:19px}.search input{border:0;outline:0;background:transparent;color:var(--ivory);width:100%;padding:11px 0;font-size:12px}.search input::placeholder{color:#8c897b}
+.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}.product{background:#20241b;border:1px solid #ffffff10;transition:transform .28s,border-color .28s;animation:fadeUp .45s both}.product:hover{transform:translateY(-6px);border-color:#c9a76a77}.product-art{height:230px;position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#65563b,#302f23 55%,#22251b)}.product-art:before{content:"";position:absolute;inset:12px;border:1px solid #c9a76a36}.product-art:after{content:"";position:absolute;width:135px;height:135px;border:1px solid #d6b66a42;border-radius:50%;box-shadow:0 0 0 14px #d6b66a09,0 0 0 29px #d6b66a07}.product-art img{position:absolute;width:100%;height:100%;object-fit:cover;opacity:.86;transition:transform .5s;z-index:1}.product:hover .product-art img{transform:scale(1.06)}.product-art .symbol{position:relative;z-index:2;font-size:84px;filter:drop-shadow(0 10px 8px #0008);text-shadow:0 2px 1px #f4d99a}.product-art.has-image .symbol{display:none}.product-tag{position:absolute;z-index:3;left:22px;top:22px;background:#171b14e8;color:var(--gold2);font-size:8px;letter-spacing:1.4px;text-transform:uppercase;padding:7px 9px;border:1px solid #c9a76a66}.quick-view{position:absolute;z-index:4;bottom:0;left:0;right:0;padding:11px;background:#c9a76a;color:#171b14;text-align:center;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;font-weight:900;transform:translateY(100%);transition:transform .25s;border:0}.product:hover .quick-view,.quick-view:focus{transform:translateY(0)}.product-info{padding:17px 16px 16px}.product-kind{font-size:8px;color:var(--gold);text-transform:uppercase;letter-spacing:1.7px}.product-name{font:20px var(--serif);font-weight:400;margin:7px 0 8px}.product-desc{font-size:10px;line-height:1.7;color:#aaa795;min-height:34px}.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid #ffffff13;margin-top:14px;padding-top:13px}.price{color:var(--gold2);font-size:14px;font-weight:750}.price small{display:block;font-size:8px;color:#a9a593;font-weight:400;margin-top:4px}.add{width:35px;height:35px;background:transparent;border:1px solid #8b7548;color:var(--gold);font-size:20px;transition:all .2s}.add:hover{background:var(--gold);color:#171b14}.empty{grid-column:1/-1;padding:45px;text-align:center;border:1px solid #454438;color:#aaa795}
+.story{background:#e9e0d0;color:#24251c;padding:75px 0}.story-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:center}.story-emblem{min-height:310px;border:1px solid #b49a65;outline:1px solid #b49a65;outline-offset:8px;background:radial-gradient(circle at center,#d7c39b,#a88d5e);display:grid;place-items:center;position:relative}.story-emblem:before{content:"SSV";font:italic 92px var(--serif);color:#3a3020;letter-spacing:-7px}.story-emblem:after{content:"EST. WITH A LOVE FOR TIMELESS BEAUTY";position:absolute;bottom:35px;font-size:8px;letter-spacing:2px;color:#473a26}.story-copy .overline{color:#8a6b34}.story-copy h2{font:clamp(35px,4.4vw,53px)/1.1 var(--serif);font-weight:400;margin:15px 0 18px}.story-copy p{font-size:13px;line-height:2;color:#5f5a4c;max-width:550px}.story-copy .btn-gold{margin-top:15px}
+.values{padding:60px 0;border-bottom:1px solid #ffffff12}.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.value{text-align:center;padding:12px}.value .icon{font-size:24px;color:var(--gold)}.value h3{font:20px var(--serif);font-weight:400;margin:12px 0 7px}.value p{font-size:11px;color:#aaa795;line-height:1.8;margin:0}
+.contact{padding:65px 0;text-align:center}.contact h2{font:clamp(32px,4vw,46px) var(--serif);font-weight:400;margin:12px 0}.contact p{color:#aaa795;font-size:12px;line-height:1.8}.contact-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}.contact .btn-outline{border-color:#6c624b}
+footer{border-top:1px solid #ffffff14;padding:27px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:18px}.footer-copy{font-size:10px;color:#938f7f}.footer-links{display:flex;gap:17px}.footer-links a{text-decoration:none;font-size:10px;color:#b8b19e}.footer-links a:hover{color:var(--gold)}
+.overlay{position:fixed;inset:0;background:#000b;z-index:60;opacity:0;pointer-events:none;transition:opacity .25s}.overlay.open{opacity:1;pointer-events:auto}.cart-panel{position:fixed;right:0;top:0;height:100%;width:min(420px,100%);background:#20241b;z-index:61;padding:24px;transform:translateX(105%);transition:transform .3s;display:flex;flex-direction:column;border-left:1px solid #c9a76a55}.cart-panel.open{transform:translateX(0)}.cart-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid #ffffff18}.cart-head h2{font:27px var(--serif);font-weight:400;margin:0}.close{width:37px;height:37px;border:1px solid #756342;background:transparent;color:var(--ivory);font-size:23px}.cart-items{flex:1;overflow:auto;padding:10px 0}.cart-item{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid #ffffff12}.cart-emoji{width:52px;height:52px;display:grid;place-items:center;background:#3a3627;color:var(--gold);font:28px var(--serif)}.cart-item strong{font:16px var(--serif);font-weight:400}.cart-item small{display:block;color:#aaa795;font-size:10px;margin-top:5px}.qty{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:12px}.qty button{width:25px;height:25px;border:1px solid #756342;color:var(--gold);background:transparent}.cart-total{border-top:1px solid #ffffff18;padding-top:18px}.total-line{display:flex;justify-content:space-between;font-size:16px;margin-bottom:16px}.total-line strong{color:var(--gold2)}.checkout{width:100%;border:0}.cart-empty{text-align:center;color:#aaa795;padding:45px 8px;font-size:12px;line-height:1.8}.cart-empty span{display:block;font:45px var(--serif);color:var(--gold);margin-bottom:12px}.fineprint{text-align:center;color:#888675;font-size:9px;line-height:1.7;margin:13px 0 0}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--gold);color:#171b14;padding:13px 18px;z-index:90;font-size:11px;font-weight:850;letter-spacing:.5px;transition:all .25s;max-width:calc(100% - 30px);text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}
+.modal{position:fixed;inset:0;z-index:70;background:#000c;display:none;place-items:center;padding:20px}.modal.open{display:grid}.modal-card{width:min(650px,100%);background:#20241b;border:1px solid #c9a76a77;display:grid;grid-template-columns:.9fr 1.1fr;position:relative}.modal-art{min-height:300px;background:radial-gradient(circle,#66583a,#25271d);display:grid;place-items:center;font-size:110px}.modal-copy{padding:35px 27px}.modal-copy h2{font:34px var(--serif);font-weight:400;margin:10px 0}.modal-copy p{font-size:12px;line-height:1.9;color:#b7b19f}.modal-close{position:absolute;right:10px;top:10px;width:33px;height:33px;border:1px solid #756342;background:#171b14;color:var(--ivory);font-size:20px;z-index:2}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:900px){.hero-grid{min-height:530px}.hero-visual{min-height:410px}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.product-art{height:220px}.navlinks{gap:15px}.navlinks a{font-size:11px}.story-grid{gap:35px}}
+@media(max-width:620px){.wrap{width:calc(100% - 30px)}.announcement{font-size:8px;letter-spacing:1.2px}.nav{height:70px}.brandtext{font-size:17px}.brandtext small{font-size:8px;letter-spacing:2px}.monogram{width:38px;height:38px}.navlinks{display:none}.bag-btn{padding:9px 11px}.hero-grid{grid-template-columns:1fr;padding-top:54px;padding-bottom:25px;gap:15px}.hero h1{font-size:58px;letter-spacing:-2px;margin:21px 0 17px}.hero-copy p{font-size:12px}.hero-visual{min-height:370px}.jewel-stage{width:min(340px,83%)}.float-a{left:0;top:10%}.float-b{right:0;bottom:10%}.section{padding:62px 0}.section-head h2{font-size:39px}.tools{align-items:flex-start;flex-direction:column;gap:10px}.search{width:100%}.products{gap:10px}.product-art{height:165px}.product-art .symbol{font-size:65px}.product-info{padding:13px 11px}.product-name{font-size:18px}.product-desc{font-size:9px}.product-tag{left:17px;top:17px;font-size:7px}.quick-view{transform:none;opacity:.96;padding:9px;font-size:8px}.product-bottom{margin-top:11px;padding-top:10px}.price{font-size:12px}.add{width:31px;height:31px}.story{padding:55px 0}.story-grid{grid-template-columns:1fr;gap:35px}.story-emblem{min-height:235px}.story-emblem:before{font-size:76px}.value-grid{grid-template-columns:1fr;gap:14px}.value{padding:12px 24px}.footer-row{flex-direction:column;align-items:flex-start}.footer-links{flex-wrap:wrap}.modal-card{grid-template-columns:1fr}.modal-art{min-height:170px;font-size:80px}.modal-copy{padding:24px}.modal-copy h2{font-size:28px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Premium boutique redesign */
+:root{--night:#10140f;--night2:#1a2018;--gold:#c8a45e;--gold2:#f0dfb6;--ivory:#faf5e9;--paper:#eee5d4;--muted:#b7b09e;--line:#51472f;--serif:'Cormorant Garamond',Georgia,'Times New Roman',serif}
+body{font-family:Manrope,Inter,ui-sans-serif,system-ui,sans-serif;letter-spacing:.05px}
+.announcement{padding:10px 12px;letter-spacing:2.2px;background:linear-gradient(90deg,#b18b49,#e1c78d,#b18b49)}
+header{background:rgba(16,20,15,.94);border-bottom-color:#c8a45e30}
+.nav{height:88px}.monogram{width:47px;height:47px;border-width:1.5px;box-shadow:inset 0 0 0 3px #c8a45e12}
+.brandtext{font-size:22px;letter-spacing:.1px}.brandtext small{letter-spacing:3.6px}
+.hero{background:radial-gradient(ellipse at 78% 43%,#49402b 0,transparent 36%),radial-gradient(ellipse at 3% 100%,#2b3324 0,transparent 36%),linear-gradient(115deg,#10140f 0%,#1a2018 58%,#29291e 100%)}
+.hero-grid{min-height:660px;gap:50px}
+h1{font-size:clamp(54px,7vw,91px);line-height:.91;letter-spacing:-3px}
+.hero-copy p{font-size:13px;max-width:410px;color:#d0c8b5}.eyebrow{letter-spacing:3.6px}
+.btn-gold,.btn-outline{min-height:48px;padding:15px 22px;letter-spacing:1.6px}.btn-gold{box-shadow:0 8px 28px #c8a45e16}
+.hero-visual{min-height:520px}.halo{width:min(450px,90%);border-color:#d6b36a66;box-shadow:0 0 0 28px #c9a76a0a,0 0 0 60px #c9a76a07}
+.jewel-stage{width:min(430px,91%);aspect-ratio:.84;background:linear-gradient(145deg,#6c5a37 0%,#393523 34%,#191d16 78%),url('https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1000&q=85') center/cover;background-blend-mode:soft-light;box-shadow:0 38px 95px #0009,0 0 0 1px #e1c17a38}
+.jewel-stage:before{inset:17px;border-color:#d9b76d70}.necklace{border-width:4px;filter:drop-shadow(0 7px 8px #000b)}
+.necklace:before{width:63px;height:77px;box-shadow:inset 0 0 0 5px #d4ad61,0 9px 20px #000a}
+.stage-label{bottom:35px;letter-spacing:2.5px;text-shadow:0 2px 12px #000}
+.float-card{padding:16px 18px;border-color:#d2b16c80;background:linear-gradient(135deg,#25271ded,#171b14f5);backdrop-filter:blur(10px)}
+.float-card strong{font-size:18px}.section{padding:100px 0}
+.section-head h2{font-size:clamp(39px,5vw,59px);letter-spacing:-.6px}.section-head p{font-size:12px;max-width:490px}
+.filters{gap:9px;margin-bottom:28px}.filter{padding:11px 18px;letter-spacing:1.3px;transition:all .25s}.tools{margin-bottom:25px}
+.products{gap:20px}.product{background:linear-gradient(155deg,#23271d,#191d16);border-color:#c8a45e1a;box-shadow:0 10px 30px #0000000a}
+.product:hover{transform:translateY(-8px);border-color:#c8a45e99;box-shadow:0 22px 50px #0005}
+.product-art{height:250px;background:radial-gradient(ellipse at 50% 38%,#79613c 0%,#3c3828 38%,#1b2018 78%)}
+.product-art:before{inset:13px;border-color:#dfbd7447}.product-art:after{width:145px;height:145px;box-shadow:0 0 0 18px #d6b66a0a,0 0 0 37px #d6b66a08}
+.product-art .symbol{font-size:91px;color:#e3c47d;text-shadow:0 3px 2px #24190a,0 0 25px #d4af6033}
+.product-tag{background:#11150feF;border-color:#c8a45e70;letter-spacing:1.7px}
+.product-info{padding:20px 18px 18px}.product-kind{letter-spacing:2px}
+.product-name{font-size:24px;line-height:1.05;margin:9px 0}.product-desc{font-size:10px;line-height:1.8;color:#bdb5a3;min-height:38px}
+.product-bottom{margin-top:17px;padding-top:15px;border-color:#c8a45e22}.price{font-size:15px;letter-spacing:.2px}.price small{letter-spacing:.3px}
+.add{width:38px;height:38px;border-color:#b59657;color:#e5c77f;font-size:22px}.add:hover{box-shadow:0 0 0 4px #c8a45e12}
+.story{background:linear-gradient(120deg,#eee5d4,#e5d8c0);position:relative;overflow:hidden}
+.story:after{content:"✧";position:absolute;right:4%;top:4%;font:190px var(--serif);color:#b99a5a12;pointer-events:none}
+.story-grid{position:relative;z-index:1}.story-emblem{box-shadow:0 20px 50px #3c2e171a;background:radial-gradient(circle at 50% 42%,#e8d7ad,#c2a36b 70%,#9a7945);min-height:350px}
+.story-emblem:before{font-size:105px;text-shadow:0 2px 0 #f1dfb6;color:#3a3020}.story-copy h2{font-size:clamp(39px,5vw,59px)}
+.story-copy p{font-size:12px;line-height:2.1}.values{padding:75px 0;background:linear-gradient(180deg,#10140f,#151a12)}
+.value-grid{gap:30px}.value{border:1px solid #c8a45e22;padding:27px 20px;background:linear-gradient(145deg,#1c2118,#141812);transition:transform .25s,border-color .25s}
+.value:hover{transform:translateY(-4px);border-color:#c8a45e66}.value .icon{font-size:28px}.value h3{font-size:24px}
+.contact{padding:85px 0;background:radial-gradient(ellipse at 50% 0,#353222,#10140f 65%)}.contact h2{font-size:clamp(37px,5vw,56px)}
+footer{background:#0b0e0a;border-top-color:#c8a45e30;padding:32px 0}
+.bag-btn{border-color:#c8a45e88;transition:background .2s,color .2s}.bag-btn:hover{background:var(--gold);color:#10140f}
+.cart-panel{background:linear-gradient(145deg,#20241b,#11150f);box-shadow:-20px 0 80px #0006}.cart-head{border-color:#c8a45e35}.cart-item{border-color:#c8a45e20}
+.toast{box-shadow:0 10px 35px #0007;letter-spacing:.7px}.modal-card{box-shadow:0 25px 90px #0009}
+@media(max-width:900px){.hero-grid{min-height:570px;gap:24px}.hero-visual{min-height:440px}.product-art{height:220px}.product-info{padding:16px 13px}}
+@media(max-width:620px){.nav{height:74px}.brandtext{font-size:17px}.hero-grid{padding-top:47px}.hero h1{font-size:60px;line-height:.94}.hero-visual{min-height:380px}.jewel-stage{width:min(335px,85%)}.section{padding:70px 0}.product-art{height:175px}.product-name{font-size:20px}.product-info{padding:15px 11px}.story-emblem{min-height:260px}.story-emblem:before{font-size:84px}.value-grid{gap:12px}.value{padding:20px 15px}}
+
+
+.shop-tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.shop-tools select{background:#191d16;color:#d8cfba;border:1px solid #655638;padding:10px 11px;font:10px Manrope,system-ui;letter-spacing:.3px;outline:none;max-width:160px}
+.shop-tools select:focus{border-color:var(--gold)}
+.wishlist-toggle{padding:10px 13px;white-space:nowrap}
+.wishlist-toggle.active{background:var(--gold);color:#10140f}
+.product{position:relative}
+.wish-btn{position:absolute;z-index:6;right:20px;top:20px;width:34px;height:34px;border:1px solid #c9a76a88;background:#11150fe8;color:#f0dfb6;border-radius:50%;font-size:18px;display:grid;place-items:center;transition:all .2s}
+.wish-btn:hover,.wish-btn.saved{background:var(--gold);color:#171b14;transform:scale(1.06)}
+.product-art .quick-view{z-index:5}
+.gift-strip{background:linear-gradient(110deg,#28281d,#171b14);border-top:1px solid #c8a45e30;border-bottom:1px solid #c8a45e30;padding:40px 0}
+.gift-strip-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.gift-strip h2{font:clamp(28px,3.7vw,42px) var(--serif);font-weight:400;margin:9px 0}
+.gift-strip p{font-size:11px;color:#b7b09e;line-height:1.8;margin:0}
+.gift-modal{position:fixed;inset:0;z-index:75;background:#000d;display:none;place-items:center;padding:18px}
+.gift-modal.open{display:grid}
+.gift-card{width:min(480px,100%);background:linear-gradient(145deg,#25291e,#11150f);border:1px solid #c8a45e88;padding:30px;position:relative;box-shadow:0 30px 100px #000a}
+.gift-card h2{font:38px var(--serif);font-weight:400;margin:10px 0}
+.gift-card p{font-size:12px;color:#b7b09e;line-height:1.8}
+.gift-field{display:block;margin:17px 0}
+.gift-field label{display:block;color:#d9cba9;font-size:10px;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
+.gift-field select{width:100%;padding:12px;background:#171b14;border:1px solid #66583a;color:#f5f0e6}
+.gift-result{margin-top:16px;padding:14px;border:1px solid #c8a45e45;color:#e9d7ac;font-size:12px;line-height:1.8;display:none}
+@media(max-width:720px){.tools{align-items:stretch}.shop-tools{width:100%}.shop-tools select{flex:1;max-width:none;min-width:0}.wishlist-toggle{flex:0 0 auto}.gift-strip-inner{align-items:flex-start;flex-direction:column}.gift-strip .btn-gold{width:100%}}
+
+
+/* Royal edition: product photography and transparent buying guidance */
+.product-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92;z-index:1;transition:transform .55s;filter:saturate(.88)}
+.product:hover .product-art img{transform:scale(1.055)}
+.product-art:after{z-index:2;pointer-events:none}
+.product-art .product-tag{z-index:4}
+.product-art .quick-view{z-index:5}
+.product-art .symbol{z-index:3;opacity:.72}
+.care-section{padding:88px 0;background:linear-gradient(180deg,#eee5d4,#e6dbc6);color:#27251c}
+.care-section .section-head p{color:#655e4e}
+.care-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.care-card{padding:27px 24px;background:#f8f2e6;border:1px solid #b89b5d55;box-shadow:0 14px 32px #392a140c}
+.care-card>span{font:italic 17px var(--serif);color:#a7833f}
+.care-card h3{font:27px var(--serif);font-weight:500;margin:15px 0 10px}
+.care-card p{font-size:11px;line-height:1.9;color:#635c4c;margin:0}
+.care-note{font-size:10px;line-height:1.8;color:#6c634f;margin:20px auto 0;max-width:850px;text-align:center}
+#whatsappContact{cursor:pointer}
+@media(max-width:700px){.care-section{padding:64px 0}.care-grid{grid-template-columns:1fr}.care-card{padding:22px}}
+
+
+.nav-actions{display:flex;align-items:center;gap:10px}
+.profile-btn{display:flex;align-items:center;gap:8px;padding:8px 10px;background:transparent;border:1px solid #756342;color:var(--ivory);font-size:10px;letter-spacing:1px}
+.profile-avatar-mini{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--gold);color:#171b14;font:italic 16px var(--serif)}
+.profile-layer{position:fixed;inset:0;z-index:90;background:#090b08d9;backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:18px}
+.profile-layer.open{display:flex}
+.profile-shell{width:min(900px,100%);max-height:min(88vh,850px);overflow:auto;background:#1a1e16;border:1px solid #c9a76a77;box-shadow:0 28px 100px #0009}
+.profile-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 26px;border-bottom:1px solid #ffffff18;background:linear-gradient(110deg,#25291d,#171b14)}
+.profile-top h2{font:34px var(--serif);font-weight:400;margin:5px 0 0}
+.profile-top p{font-size:11px;color:#aaa795;margin:5px 0 0;line-height:1.6}
+.profile-close{background:transparent;border:1px solid #8b7548;color:var(--gold2);font-size:24px;width:40px;height:40px}
+.profile-tabs{display:flex;gap:5px;padding:14px 22px;border-bottom:1px solid #ffffff18;overflow:auto}
+.profile-tab{flex:0 0 auto;padding:10px 13px;border:1px solid #454438;background:transparent;color:#c4bdad;font-size:10px;letter-spacing:1px;text-transform:uppercase}
+.profile-tab.active{background:var(--gold);border-color:var(--gold);color:#171b14}
+.profile-content{padding:24px 26px 28px}
+.profile-pane{display:none}.profile-pane.active{display:block}
+.profile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.profile-field{display:flex;flex-direction:column;gap:7px;margin-bottom:15px}
+.profile-field label{font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--gold2)}
+.profile-field input,.profile-field select,.profile-field textarea{width:100%;border:1px solid #514b39;background:#12150f;color:var(--ivory);padding:12px 13px;border-radius:0;outline:none;font-size:12px}
+.profile-field input:focus,.profile-field textarea:focus{border-color:var(--gold)}
+.profile-subhead{font:26px var(--serif);font-weight:400;margin:0 0 8px}
+.profile-muted{font-size:11px;line-height:1.8;color:#aaa795}
+.profile-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.profile-action{padding:12px 15px;border:1px solid #8c805f;background:transparent;color:var(--ivory);font-size:10px;letter-spacing:1px;text-transform:uppercase}
+.profile-action.primary{background:var(--gold);color:#171b14;border-color:var(--gold)}
+.profile-card{border:1px solid #ffffff18;background:#20241b;padding:17px;margin:12px 0}
+.profile-card h4{font:21px var(--serif);font-weight:400;margin:0 0 7px;color:var(--gold2)}
+.profile-card p{font-size:11px;line-height:1.75;color:#bdb8a8;margin:4px 0}
+.profile-empty{padding:23px;border:1px dashed #756342;color:#aaa795;font-size:12px;line-height:1.8;text-align:center;margin-top:12px}
+.profile-status{font-size:10px;color:#c9a76a;margin-top:10px;min-height:15px}
+.profile-danger{border-color:#8e5a4c;color:#e0b1a4}
+.profile-badge{display:inline-block;border:1px solid #756342;color:var(--gold2);padding:5px 8px;font-size:9px;letter-spacing:1px;text-transform:uppercase}
+@media(max-width:620px){.nav-actions{gap:6px}.profile-btn{padding:6px}.profile-label{display:none}.profile-avatar-mini{width:26px;height:26px}.bag-btn{font-size:10px}.profile-layer{padding:7px}.profile-shell{max-height:94vh}.profile-top{padding:17px}.profile-top h2{font-size:28px}.profile-tabs{padding:10px;gap:4px}.profile-tab{padding:9px;font-size:9px}.profile-content{padding:18px 15px 22px}.profile-grid{grid-template-columns:1fr;gap:0}}
+
+</style>
+</head>
+<body>
+<div class="announcement">A curated world of timeless adornment &nbsp;·&nbsp; Product images and catalogue details are illustrative until verified</div>
+<header><div class="wrap nav">
+<a class="brand" href="#" aria-label="SSV Antique Collections home"><span class="monogram">SSV</span><span class="brandtext">SSV Antique Collections<small>Timeless treasures</small></span></a>
+<nav class="navlinks"><a href="#collection">THE COLLECTION</a><a href="#story">OUR STORY</a><a href="#values">OUR PROMISE</a><a href="#care">BUYING GUIDE</a><a href="#contact">CONTACT</a></nav>
+<div class="nav-actions"><button class="profile-btn" id="openProfile" type="button" aria-label="Open my profile"><span class="profile-avatar-mini" id="navAvatar">S</span><span class="profile-label">MY PROFILE</span></button><button class="bag-btn" id="openCart">YOUR BAG <span class="bag-count" id="cartCount">0</span></button></div>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div class="hero-copy"><div class="eyebrow">The art of adornment</div><h1>Jewels with a<br><em>past. Beauty</em><br>that lasts.</h1><p>Discover vintage-inspired jewellery where old-world artistry meets enduring elegance. Statement pieces, intricate details, and heirloom-worthy charm — thoughtfully brought together by SSV Antique Collections.</p><div class="hero-actions"><a class="btn-gold" href="#collection">Explore the collection <span>↗</span></a><button class="btn-outline" type="button" id="giftFinderOpen">Find a gift ✧</button></div><div class="hero-note"><span>✧</span> DISTINCTIVE DETAILS · TIMELESS CHARACTER</div></div>
+<div class="hero-visual"><div class="halo"></div><div class="jewel-stage"><div class="necklace"></div><div class="stage-label">An heirloom in the making</div></div><div class="float-card float-a"><small>Curated with care</small><strong>Beauty in every detail</strong></div><div class="float-card float-b"><small>The SSV edit</small><strong>Wear your story</strong></div></div>
+</div></section>
+<section class="section" id="collection"><div class="wrap">
+<div class="section-head"><div class="overline">Collected for you</div><h2>The Jewellery Collection</h2><p>Explore pieces inspired by heritage craftsmanship, intricate motifs, and the unmistakable warmth of antique gold.</p><div class="divider-ornament">✧</div></div>
+<div class="filters" id="filters"><button class="filter active" data-category="All">All pieces</button><button class="filter" data-category="Necklaces">Necklaces</button><button class="filter" data-category="Earrings">Earrings</button><button class="filter" data-category="Bangles">Bangles</button><button class="filter" data-category="Rings">Rings</button><button class="filter" data-category="Sets">Jewellery sets</button></div>
+<div class="tools"><div class="results" id="resultsCount">8 curated pieces</div><div class="shop-tools"><select id="priceFilter" aria-label="Filter by budget"><option value="all">All budgets</option><option value="under1000">Under ₹1,000</option><option value="1000-2000">₹1,000–₹2,000</option><option value="2000plus">₹2,000+</option></select><select id="sortSelect" aria-label="Sort products"><option value="featured">Featured pieces</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name: A to Z</option></select><button class="filter wishlist-toggle" id="wishlistToggle" type="button">♡ Wishlist <span id="wishlistCount">0</span></button></div><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search the collection…" aria-label="Search jewellery"></label></div>
+<div class="products" id="products"></div>
+</div></section>
+<section class="story" id="story"><div class="wrap story-grid"><div class="story-emblem" aria-label="SSV monogram emblem"></div><div class="story-copy"><div class="overline">A love for the timeless</div><h2>Not just jewellery.<br>A feeling that stays.</h2><p>At SSV Antique Collections, we believe the most beautiful pieces do more than complete an outfit — they hold a little magic. Our collection celebrates the richness of vintage design, the romance of detailed metalwork, and the elegance that never follows a trend.</p><p>Whether you're dressing for a celebration or choosing a meaningful gift, find a piece that feels unmistakably yours.</p><a class="btn-gold" href="#collection">Find your treasure <span>↗</span></a></div></div></section>
+<section class="values" id="values"><div class="wrap value-grid">
+<div class="value"><div class="icon">✧</div><h3>Chosen for character</h3><p>Designs selected for their detail, beauty, and distinctive vintage-inspired style.</p></div>
+<div class="value"><div class="icon">❖</div><h3>Thoughtful presentation</h3><p>Every piece deserves a little ceremony — from browsing to gifting.</p></div>
+<div class="value"><div class="icon">◇</div><h3>Personal service</h3><p>Questions about a piece? Get in touch for help choosing something special.</p></div>
+</div></section>
+<section class="gift-strip"><div class="wrap gift-strip-inner"><div><div class="overline">The art of gifting</div><h2>A little luxury, chosen just for them.</h2><p>Find a thoughtful piece for birthdays, weddings, anniversaries and festive moments.</p></div><button class="btn-gold" id="giftFinderOpen2" type="button">Discover a gift ↗</button></div></section>
+
+<section class="care-section" id="care">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="overline">A considered buying experience</div>
+      <h2>Know your piece before it becomes yours.</h2>
+      <p>We want every purchase to feel special and well-informed. Ask us to confirm the details of your chosen piece before ordering.</p>
+      <div class="divider-ornament">✧</div>
+    </div>
+    <div class="care-grid">
+      <article class="care-card"><span>01</span><h3>Material clarity</h3><p>Ask for the exact base metal, plating, stones, and any care limitations. No material or purity claim is made until the seller confirms it.</p></article>
+      <article class="care-card"><span>02</span><h3>Photos & dimensions</h3><p>Request current product photos, close-ups, dimensions, weight where available, and a confirmation that the pictured item is the one being sold.</p></article>
+      <article class="care-card"><span>03</span><h3>Order confirmation</h3><p>Confirm final price, shipping charges, delivery estimate, return policy, and payment method in writing before paying.</p></article>
+    </div>
+    <p class="care-note">SETUP STATUS: Demo catalogue only. Product photos are visual references and may not depict actual stock. Replace sample products, prices, photos, and material notes with verified store information. Add the business email and WhatsApp number in the setup constants before publishing. Secure payments, shipping, returns, and order processing are not connected.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact"><div class="wrap"><div class="overline">A personal touch</div><h2>Find the piece that speaks to you.</h2><p>Need help choosing a gift or want to know more about a design?<br>We'd love to hear from you.</p><div class="contact-actions"><button class="btn-gold" id="emailContact" type="button">Email the collection ↗</button><button class="btn-outline" id="whatsappContact" type="button">WhatsApp enquiry ↗</button><a class="btn-outline" href="#collection">Browse jewellery</a></div></div></section>
+</main>
+<footer><div class="wrap footer-row"><a class="brand" href="#"><span class="monogram">SSV</span><span class="brandtext">SSV Antique Collections<small>Timeless treasures</small></span></a><div class="footer-copy">© <span id="year"></span> SSV Antique Collections. All rights reserved.</div><div class="footer-links"><a href="#collection">Collection</a><a href="#story">Our story</a><a href="#care">Buying guide</a><a href="#contact">Contact</a></div></div></footer>
+<div class="overlay" id="overlay"></div>
+<aside class="cart-panel" id="cartPanel" role="dialog" aria-modal="true" aria-label="Your shopping bag"><div class="cart-head"><h2>Your bag <span id="basketItemsLabel" style="font:12px system-ui;color:#c9a76a"></span></h2><button class="close" id="closeCart" aria-label="Close bag">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-total"><div class="total-line"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div><button class="btn-gold checkout" id="checkoutBtn">Enquire by email ↗</button><button class="btn-outline checkout" id="whatsappCheckout" style="margin-top:10px">Enquire by WhatsApp ↗</button><p class="fineprint">DEMO ONLY: Sample products and prices. Profile, wishlist, addresses and personal order notes stay in this browser only. No account login, verified order status, secure payments or order processing is connected.</p></div></aside>
+<div class="modal" id="productModal" role="dialog" aria-modal="true" aria-label="Jewellery details"><div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Close details">×</button><div class="modal-art" id="modalArt">✧</div><div class="modal-copy"><div class="overline" id="modalKind">The SSV edit</div><h2 id="modalName">A timeless piece</h2><div id="modalPrice" style="color:#ead7ad;font-weight:800"></div><p id="modalDesc"></p><button class="btn-gold" id="modalAdd">Add to bag ↗</button></div></div></div><div class="gift-modal" id="giftModal" role="dialog" aria-modal="true" aria-label="Gift finder"><div class="gift-card"><button class="modal-close" id="giftClose" aria-label="Close gift finder">×</button><div class="overline">The SSV gift concierge</div><h2>Find their kind of timeless.</h2><p>Choose a budget and occasion to get a suggestion from our sample collection.</p><div class="gift-field"><label for="giftOccasion">What's the occasion?</label><select id="giftOccasion"><option value="Birthday">Birthday</option><option value="Wedding">Wedding</option><option value="Anniversary">Anniversary</option><option value="Festive">Festive celebration</option><option value="Just because">Just because</option></select></div><div class="gift-field"><label for="giftBudget">Your budget</label><select id="giftBudget"><option value="1000">Under ₹1,000</option><option value="2000">₹1,000–₹2,000</option><option value="5000">₹2,000+</option></select></div><button class="btn-gold" id="giftFindBtn" type="button">Find a thoughtful gift ↗</button><div class="gift-result" id="giftResult"></div></div></div>
+<div class="profile-layer" id="profileLayer" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+ <div class="profile-shell">
+  <div class="profile-top">
+   <div><div class="overline">Your personal corner</div><h2 id="profileTitle">My SSV Profile</h2><p>Saved on this browser only · No account login is connected</p></div>
+   <button class="profile-close" id="closeProfile" type="button" aria-label="Close profile">×</button>
+  </div>
+  <div class="profile-tabs" role="tablist" aria-label="Profile sections">
+   <button class="profile-tab active" data-profile-tab="details" type="button">Profile</button>
+   <button class="profile-tab" data-profile-tab="wishlist" type="button">Wishlist</button>
+   <button class="profile-tab" data-profile-tab="orders" type="button">Orders</button>
+   <button class="profile-tab" data-profile-tab="addresses" type="button">Addresses</button>
+   <button class="profile-tab" data-profile-tab="security" type="button">Privacy & security</button>
+  </div>
+  <div class="profile-content">
+   <section class="profile-pane active" id="pane-details">
+    <h3 class="profile-subhead">A little about you</h3><p class="profile-muted">Personalise your shopping experience. Only fields you choose to save are stored in this browser's local storage.</p>
+    <form id="profileForm">
+     <div class="profile-grid">
+      <div class="profile-field"><label for="profileName">Full name</label><input id="profileName" name="name" autocomplete="name" maxlength="80" placeholder="Your name"></div>
+      <div class="profile-field"><label for="profilePhone">Phone number</label><input id="profilePhone" name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="Optional"></div>
+      <div class="profile-field"><label for="profileEmail">Email address</label><input id="profileEmail" name="email" type="email" autocomplete="email" maxlength="120" placeholder="Optional"></div>
+      <div class="profile-field"><label for="profileStyle">Favourite style</label><select id="profileStyle" name="style"><option value="Heritage classics">Heritage classics</option><option value="Temple jewellery">Temple jewellery</option><option value="Everyday elegance">Everyday elegance</option><option value="Statement pieces">Statement pieces</option><option value="Gift shopping">Gift shopping</option></select></div>
+     </div>
+     <div class="profile-actions"><button class="profile-action primary" type="submit">Save profile</button><button class="profile-action" type="button" id="profileClearForm">Clear fields</button></div><div class="profile-status" id="profileStatus" aria-live="polite"></div>
+    </form>
+   </section>
+   <section class="profile-pane" id="pane-wishlist">
+    <h3 class="profile-subhead">Pieces you've saved</h3><p class="profile-muted">Your saved items are kept on this browser. Wishlist contents are not shared across devices.</p>
+    <div id="profileWishlist"></div><div class="profile-actions"><button class="profile-action primary" id="browseWishlist" type="button">Browse collection</button></div>
+   </section>
+   <section class="profile-pane" id="pane-orders">
+    <h3 class="profile-subhead">Order notes</h3><p class="profile-muted">There is no store order system connected yet. You can save a reference for your own notes, but this page cannot verify purchases or show real order status.</p>
+    <form id="orderNoteForm">
+     <div class="profile-grid">
+      <div class="profile-field"><label for="orderReference">Order reference (optional)</label><input id="orderReference" maxlength="80" placeholder="Reference supplied by the store"></div>
+      <div class="profile-field"><label for="orderDate">Date</label><input id="orderDate" type="date"></div>
+     </div>
+     <div class="profile-field"><label for="orderNote">Your note</label><textarea id="orderNote" rows="3" maxlength="500" placeholder="e.g. Asked the store to confirm delivery date"></textarea></div>
+     <div class="profile-actions"><button class="profile-action primary" type="submit">Save personal note</button></div><div class="profile-status" id="orderStatus" aria-live="polite"></div>
+    </form>
+    <div id="profileOrders"></div>
+   </section>
+   <section class="profile-pane" id="pane-addresses">
+    <h3 class="profile-subhead">Delivery addresses</h3><p class="profile-muted">Add or remove addresses for your own reference. They are stored only in this browser, not sent to the store.</p>
+    <form id="addressForm">
+     <div class="profile-grid">
+      <div class="profile-field"><label for="addressLabel">Address label</label><input id="addressLabel" maxlength="40" placeholder="Home, Work…"></div>
+      <div class="profile-field"><label for="addressRecipient">Recipient name</label><input id="addressRecipient" maxlength="80" autocomplete="name" placeholder="Full name"></div>
+     </div>
+     <div class="profile-field"><label for="addressLine">Address</label><textarea id="addressLine" rows="2" maxlength="300" autocomplete="street-address" placeholder="House / street / area"></textarea></div>
+     <div class="profile-grid">
+      <div class="profile-field"><label for="addressCity">City</label><input id="addressCity" maxlength="80" autocomplete="address-level2" placeholder="City"></div>
+      <div class="profile-field"><label for="addressPin">PIN code</label><input id="addressPin" inputmode="numeric" maxlength="10" autocomplete="postal-code" placeholder="Postal code"></div>
+     </div>
+     <div class="profile-actions"><button class="profile-action primary" type="submit">Save address on this device</button></div><div class="profile-status" id="addressStatus" aria-live="polite"></div>
+    </form>
+    <div id="profileAddresses"></div>
+   </section>
+   <section class="profile-pane" id="pane-security">
+    <h3 class="profile-subhead">Privacy & security</h3>
+    <div class="profile-card"><span class="profile-badge">Local demo</span><h4>No account login is enabled</h4><p>This static website does not authenticate you, sync your profile, or protect it with an account password. Anyone using this same browser profile may be able to access the saved information.</p></div>
+    <div class="profile-card"><h4>Keep sensitive details out</h4><p>Do not save payment-card numbers, passwords, identity documents, or other highly sensitive data here. For real customer accounts, the store needs a secure backend, authentication, access controls, and a privacy policy.</p></div>
+    <div class="profile-actions"><button class="profile-action" id="exportProfile" type="button">Export my local data</button><button class="profile-action profile-danger" id="clearLocalData" type="button">Delete saved profile data</button></div>
+    <div class="profile-status" id="securityStatus" aria-live="polite"></div>
+   </section>
+  </div>
+ </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script>
+// STORE SETUP: enter real contact details here before publishing. WhatsApp format: country code + number, digits only. Never collect card details in this static page.
+const WHATSAPP_NUMBER = "";
+const STORE_EMAIL = "";
+const items=[
+{id:1,image:"https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=85",material:"Material/finish to be confirmed by SSV before purchase",care:"Keep dry, avoid perfume and chemicals, and store separately in a soft pouch.",name:"Temple Necklace",kind:"Necklaces",symbol:"♧",price:2499,tag:"Signature style",desc:"A statement necklace inspired by traditional temple motifs and warm antique-gold finishes."},
+{id:2,image:"https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85",material:"Material/finish to be confirmed by SSV before purchase",care:"Keep dry, avoid perfume and chemicals, and store separately in a soft pouch.",name:"Heritage Jhumkas",kind:"Earrings",symbol:"❋",price:1299,tag:"Customer favourite",desc:"Ornate jhumka-inspired earrings with a classic silhouette made for festive moments."},
+{id:3,image:"https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85",material:"Material/finish to be confirmed by SSV before purchase",care:"Keep dry, avoid perfume and chemicals, and store separately in a soft pouch.",name:"Antique Gold Bangles",kind:"Bangles",symbol:"◎",price:1799,tag:"Classic",desc:"A timeless bangle design with vintage character, made to complement both everyday and occasion wear."},
+{id:4,image:"https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85",material:"Material/finish to be confirmed by SSV before purchase",care:"Keep dry, avoid perfume and chemicals, and store separately in a soft pouch.",name:"Royal Kundan Ring",kind:"Rings",symbol:"✧",price:899,tag:"Little treasure",desc:"A delicate ring inspired by traditional kundan settings and heirloom jewellery."},
+{id:5,image:"https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=85",material:"Material/finish to be confirmed by SSV before purchase",care:"Keep dry, avoid perfume and chemicals, and store separately in a soft pouch.",name:"Festive Jewellery Set",kind:"Sets",symbol:"♢",price:3499,tag:"Occasion edit",desc:"A coordinated jewellery set inspired by rich heritage styling and celebration dressing."},
+{id:6,image:"https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=85",material:"Material/finish to be confirmed by SSV before purchase",care:"Keep dry, avoid perfume and chemicals, and store separately in a soft pouch.",name:"Vintage Chandbalis",kind:"Earrings",symbol:"☼",price:1599,tag:"Statement piece",desc:"Moon-shaped statement earrings inspired by classic Indian adornment and intricate detail."},
+{id:7,image:"https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85",material:"Material/finish to be confirmed by SSV before purchase",care:"Keep dry, avoid perfume and chemicals, and store separately in a soft pouch.",name:"Layered Heritage Haar",kind:"Necklaces",symbol:"♧",price:2899,tag:"The grand edit",desc:"A layered necklace look inspired by heirloom haar designs and traditional craftsmanship."},
+{id:8,image:"https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=900&q=85",material:"Material/finish to be confirmed by SSV before purchase",care:"Keep dry, avoid perfume and chemicals, and store separately in a soft pouch.",name:"Floral Cocktail Ring",kind:"Rings",symbol:"✿",price:1099,tag:"Gift-worthy",desc:"A floral-inspired ring with a romantic vintage mood and a little regal sparkle."}
+];
+const LOCAL_KEYS={profile:"ssv_profile_v1",wishlist:"ssv_wishlist_v1",cart:"ssv_cart_v1",addresses:"ssv_addresses_v1",orders:"ssv_order_notes_v1"};
+function readLocal(key,fallback){try{const raw=localStorage.getItem(key);return raw===null?fallback:JSON.parse(raw)}catch(e){return fallback}}
+function writeLocal(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true}catch(e){showToast("Browser storage is unavailable or full");return false}}
+let profileData=readLocal(LOCAL_KEYS.profile,{name:"",phone:"",email:"",style:"Heritage classics"});
+let savedWishlist=readLocal(LOCAL_KEYS.wishlist,[]);
+let savedCart=readLocal(LOCAL_KEYS.cart,{});
+let savedAddresses=readLocal(LOCAL_KEYS.addresses,[]);
+let savedOrderNotes=readLocal(LOCAL_KEYS.orders,[]);
+let activeCategory="All",cart=savedCart&&typeof savedCart==="object"?savedCart:{},modalItem=null,wishlist=new Set(Array.isArray(savedWishlist)?savedWishlist:[]),wishlistOnly=false;
+const rupees=n=>"₹"+n.toLocaleString("en-IN");
+function renderProducts(){
+ const q=document.getElementById("searchInput").value.trim().toLowerCase();
+ const budget=document.getElementById("priceFilter").value;
+ let list=items.filter(x=>(activeCategory==="All"||x.kind===activeCategory)
+ &&(x.name.toLowerCase().includes(q)||x.kind.toLowerCase().includes(q)||x.desc.toLowerCase().includes(q))
+ &&(budget==="all"||(budget==="under1000"&&x.price<1000)||(budget==="1000-2000"&&x.price>=1000&&x.price<=2000)||(budget==="2000plus"&&x.price>2000))
+ &&(!wishlistOnly||wishlist.has(x.id)));
+ const sort=document.getElementById("sortSelect").value;
+ if(sort==="low")list.sort((a,b)=>a.price-b.price);
+ if(sort==="high")list.sort((a,b)=>b.price-a.price);
+ if(sort==="name")list.sort((a,b)=>a.name.localeCompare(b.name));
+ document.getElementById("resultsCount").textContent=`${list.length} ${list.length===1?"piece":"curated pieces"}`;
+ const el=document.getElementById("products");
+ if(!list.length){el.innerHTML='<div class="empty">No pieces match those choices. Try changing your filters ✧</div>';return}
+ el.innerHTML=list.map((x,i)=>`<article class="product" style="animation-delay:${i*.04}s"><button class="wish-btn ${wishlist.has(x.id)?"saved":""}" aria-label="Toggle ${x.name} wishlist" onclick="toggleWishlist(${x.id})">${wishlist.has(x.id)?"♥":"♡"}</button><div class="product-art"><span class="product-tag">${x.tag}</span><img src="${x.image}" alt="${x.name} jewellery inspiration" loading="lazy" onerror="this.remove()"><span class="symbol">${x.symbol}</span><button class="quick-view" onclick="showDetails(${x.id})">View details +</button></div><div class="product-info"><div class="product-kind">${x.kind}</div><h3 class="product-name">${x.name}</h3><div class="product-desc">${x.desc}</div><div class="product-bottom"><div class="price">${rupees(x.price)}<small>Sample price · INR</small></div><button class="add" aria-label="Add ${x.name} to bag" onclick="addToCart(${x.id})">+</button></div></div></article>`).join("");
+ document.getElementById("wishlistCount").textContent=wishlist.size;
+ document.getElementById("wishlistToggle").classList.toggle("active",wishlistOnly);
+}
+function addToCart(id){cart[id]=(cart[id]||0)+1;writeLocal(LOCAL_KEYS.cart,cart);renderCart();showToast(items.find(x=>x.id===id).name+" added to your bag")}
+function changeQty(id,d){cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];writeLocal(LOCAL_KEYS.cart,cart);renderCart()}
+function renderCart(){const entries=Object.entries(cart),count=entries.reduce((s,[,q])=>s+q,0),total=entries.reduce((s,[id,q])=>s+items.find(x=>x.id===+id).price*q,0);document.getElementById("cartCount").textContent=count;document.getElementById("basketItemsLabel").textContent=count?`(${count} items)`:"";document.getElementById("cartTotal").textContent=rupees(total);const el=document.getElementById("cartItems");if(!entries.length){el.innerHTML='<div class="cart-empty"><span>✧</span>Your bag is waiting for something timeless.<br>Explore the collection and add a favourite.</div>';return}el.innerHTML=entries.map(([id,q])=>{const x=items.find(v=>v.id===+id);return `<div class="cart-item"><div class="cart-emoji">${x.symbol}</div><div><strong>${x.name}</strong><small>${rupees(x.price)} · sample price</small><div class="qty"><button onclick="changeQty(${x.id},-1)" aria-label="Decrease quantity">−</button><span>${q}</span><button onclick="changeQty(${x.id},1)" aria-label="Increase quantity">+</button></div></div><strong style="color:#ead7ad">${rupees(x.price*q)}</strong></div>`}).join("")}
+function openCart(){document.getElementById("overlay").classList.add("open");document.getElementById("cartPanel").classList.add("open");document.body.style.overflow="hidden"}
+function closeCart(){document.getElementById("overlay").classList.remove("open");document.getElementById("cartPanel").classList.remove("open");document.body.style.overflow=""}
+function showDetails(id){const x=items.find(v=>v.id===id);modalItem=id;document.getElementById("modalArt").textContent=x.symbol;document.getElementById("modalKind").textContent=x.kind;document.getElementById("modalName").textContent=x.name;document.getElementById("modalPrice").textContent=rupees(x.price)+" · Sample price";document.getElementById("modalDesc").textContent=x.desc+" "+x.material+". Care: "+x.care+" Please confirm exact materials, stock, dimensions, and final price with the store before purchase.";document.getElementById("productModal").classList.add("open");document.body.style.overflow="hidden"}
+function closeModal(){document.getElementById("productModal").classList.remove("open");document.body.style.overflow=""}
+let toastTimer;function showToast(s){const t=document.getElementById("toast");t.textContent=s;t.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove("show"),2300)}
+function toggleWishlist(id){if(wishlist.has(id)){wishlist.delete(id);showToast("Removed from your wishlist")}else{wishlist.add(id);showToast("Saved to your wishlist")}writeLocal(LOCAL_KEYS.wishlist,[...wishlist]);renderProducts();renderProfileWishlist()}
+function openGiftFinder(){document.getElementById("giftModal").classList.add("open");document.body.style.overflow="hidden"}
+function closeGiftFinder(){document.getElementById("giftModal").classList.remove("open");document.body.style.overflow=""}
+function findGift(){const budget=Number(document.getElementById("giftBudget").value),occasion=document.getElementById("giftOccasion").value;let picks=items.filter(x=>x.price<=budget).sort((a,b)=>b.price-a.price).slice(0,3);if(!picks.length)picks=items.slice(0,3);const chosen=picks[Math.floor(Math.random()*picks.length)];const result=document.getElementById("giftResult");result.style.display="block";result.innerHTML=`For a ${occasion.toLowerCase()} gift, consider <strong>${chosen.name}</strong> at ${rupees(chosen.price)}. <button class="btn-outline" style="margin-top:10px;padding:9px 12px" onclick="closeGiftFinder();showDetails(${chosen.id})">View this piece ↗</button><div style="font-size:10px;color:#aaa795;margin-top:8px">Suggestion based on sample products and prices.</div>`}
+document.getElementById("emailContact").addEventListener("click",()=>{if(!STORE_EMAIL){showToast("Add the store email address before publishing");return}window.location.href="mailto:"+STORE_EMAIL+"?subject="+encodeURIComponent("Enquiry - SSV Antique Collections")});document.getElementById("whatsappContact").addEventListener("click",()=>{if(!WHATSAPP_NUMBER){showToast("Add the store WhatsApp number before publishing");return}window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent("Hello SSV Antique Collections, I would like to enquire about your jewellery collection."),"_blank","noopener")});document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("[data-category]");if(!b)return;activeCategory=b.dataset.category;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));renderProducts()});
+document.getElementById("searchInput").addEventListener("input",renderProducts);document.getElementById("priceFilter").addEventListener("change",renderProducts);document.getElementById("sortSelect").addEventListener("change",renderProducts);document.getElementById("wishlistToggle").addEventListener("click",()=>{wishlistOnly=!wishlistOnly;renderProducts();if(wishlistOnly)document.getElementById("collection").scrollIntoView({behavior:"smooth"})});document.getElementById("giftFinderOpen").addEventListener("click",openGiftFinder);document.getElementById("giftFinderOpen2").addEventListener("click",openGiftFinder);document.getElementById("giftClose").addEventListener("click",closeGiftFinder);document.getElementById("giftFindBtn").addEventListener("click",findGift);document.getElementById("giftModal").addEventListener("click",e=>{if(e.target.id==="giftModal")closeGiftFinder()});document.getElementById("openCart").addEventListener("click",openCart);document.getElementById("closeCart").addEventListener("click",closeCart);document.getElementById("overlay").addEventListener("click",closeCart);document.getElementById("modalClose").addEventListener("click",closeModal);document.getElementById("productModal").addEventListener("click",e=>{if(e.target.id==="productModal")closeModal()});document.getElementById("modalAdd").addEventListener("click",()=>{if(modalItem)addToCart(modalItem);closeModal()});document.getElementById("whatsappCheckout").addEventListener("click",()=>{if(!Object.keys(cart).length){showToast("Your bag is empty");return}if(!WHATSAPP_NUMBER){showToast("Add the store WhatsApp number before publishing");return}const lines=Object.entries(cart).map(([id,q])=>{const x=items.find(v=>v.id===+id);return `${x.name} × ${q} — ${rupees(x.price*q)}`}).join("\\n");const total=Object.entries(cart).reduce((s,[id,q])=>s+items.find(v=>v.id===+id).price*q,0);window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent("Hello SSV Antique Collections, I would like to enquire about these pieces:\\n\\n"+lines+"\\n\\nSample subtotal: "+rupees(total)+"\\nPlease confirm stock, exact materials, shipping, and final price."),"_blank","noopener")});document.getElementById("checkoutBtn").addEventListener("click",()=>{if(!Object.keys(cart).length){showToast("Your bag is empty");return}if(!STORE_EMAIL){showToast("Add the store email address before publishing");return}const lines=Object.entries(cart).map(([id,q])=>{const x=items.find(v=>v.id===+id);return `${x.name} × ${q} — ${rupees(x.price*q)}`}).join("\n");const total=Object.entries(cart).reduce((s,[id,q])=>s+items.find(v=>v.id===+id).price*q,0);const body=encodeURIComponent(`Hello SSV Antique Collections,\n\nI would like to enquire about these pieces:\n${lines}\n\nSubtotal: ${rupees(total)}\n\nPlease confirm availability, materials, and final pricing.`);window.location.href=`mailto:${STORE_EMAIL}?subject=${encodeURIComponent("Jewellery enquiry - SSV Antique Collections")}&body=${body}`;showToast("Opening your email app")});document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeCart();closeModal();closeGiftFinder()}});document.getElementById("year").textContent=new Date().getFullYear();renderProducts();renderCart();
+function safeText(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function openProfile(tab="details"){document.getElementById("profileLayer").classList.add("open");document.body.style.overflow="hidden";switchProfileTab(tab);fillProfileForm();renderProfileWishlist();renderProfileOrders();renderProfileAddresses();document.getElementById("navAvatar").textContent=(profileData.name||"S").trim().charAt(0).toUpperCase()||"S"}
+function closeProfile(){document.getElementById("profileLayer").classList.remove("open");document.body.style.overflow=""}
+function switchProfileTab(tab){document.querySelectorAll(".profile-tab").forEach(b=>b.classList.toggle("active",b.dataset.profileTab===tab));document.querySelectorAll(".profile-pane").forEach(p=>p.classList.toggle("active",p.id==="pane-"+tab))}
+function fillProfileForm(){document.getElementById("profileName").value=profileData.name||"";document.getElementById("profilePhone").value=profileData.phone||"";document.getElementById("profileEmail").value=profileData.email||"";document.getElementById("profileStyle").value=profileData.style||"Heritage classics"}
+function renderProfileWishlist(){const el=document.getElementById("profileWishlist");if(!el)return;const list=items.filter(x=>wishlist.has(x.id));el.innerHTML=list.length?list.map(x=>`<div class="profile-card"><h4>${safeText(x.name)}</h4><p>${safeText(x.kind)} · ${rupees(x.price)} <span class="profile-badge">Sample price</span></p><div class="profile-actions"><button class="profile-action primary" type="button" onclick="openProfile();closeProfile();showDetails(${x.id})">View piece</button><button class="profile-action" type="button" onclick="toggleWishlist(${x.id})">Remove</button></div></div>`).join(""):'<div class="profile-empty">Your wishlist is empty. Tap the heart on a piece you love to save it here.</div>'}
+function renderProfileOrders(){const el=document.getElementById("profileOrders");if(!el)return;el.innerHTML=savedOrderNotes.length?savedOrderNotes.map((o,i)=>`<div class="profile-card"><span class="profile-badge">Personal note · not verified</span><h4>${safeText(o.reference||"Order note")}</h4><p>Date: ${safeText(o.date||"Not provided")}</p><p>${safeText(o.note||"No note added")}</p><p><strong>Status:</strong> Not connected to a store order system; no purchase or delivery status is verified.</p><div class="profile-actions"><button class="profile-action profile-danger" type="button" onclick="deleteOrderNote(${i})">Delete note</button></div></div>`).join(""):'<div class="profile-empty">No personal order notes saved. Real order history will appear only after a verified store order system is connected.</div>'}
+function deleteOrderNote(i){if(!confirm("Delete this personal note from this browser?"))return;savedOrderNotes.splice(i,1);writeLocal(LOCAL_KEYS.orders,savedOrderNotes);renderProfileOrders()}
+function renderProfileAddresses(){const el=document.getElementById("profileAddresses");if(!el)return;el.innerHTML=savedAddresses.length?savedAddresses.map((a,i)=>`<div class="profile-card"><span class="profile-badge">${safeText(a.label||"Address")}</span><h4>${safeText(a.recipient)}</h4><p>${safeText(a.line)}</p><p>${safeText(a.city)} ${safeText(a.pin)}</p><div class="profile-actions"><button class="profile-action profile-danger" type="button" onclick="deleteAddress(${i})">Delete address</button></div></div>`).join(""):'<div class="profile-empty">No addresses saved on this device yet.</div>'}
+function deleteAddress(i){if(!confirm("Delete this address from this browser?"))return;savedAddresses.splice(i,1);writeLocal(LOCAL_KEYS.addresses,savedAddresses);renderProfileAddresses()}
+document.getElementById("openProfile").addEventListener("click",()=>openProfile());
+document.getElementById("closeProfile").addEventListener("click",closeProfile);
+document.getElementById("profileLayer").addEventListener("click",e=>{if(e.target.id==="profileLayer")closeProfile()});
+document.querySelectorAll(".profile-tab").forEach(b=>b.addEventListener("click",()=>switchProfileTab(b.dataset.profileTab)));
+document.getElementById("profileForm").addEventListener("submit",e=>{e.preventDefault();profileData={name:document.getElementById("profileName").value.trim(),phone:document.getElementById("profilePhone").value.trim(),email:document.getElementById("profileEmail").value.trim(),style:document.getElementById("profileStyle").value};if(writeLocal(LOCAL_KEYS.profile,profileData)){document.getElementById("profileStatus").textContent="Profile saved on this browser.";document.getElementById("navAvatar").textContent=(profileData.name||"S").charAt(0).toUpperCase()||"S";showToast("Profile saved on this device")}});
+document.getElementById("profileClearForm").addEventListener("click",()=>{profileData={name:"",phone:"",email:"",style:"Heritage classics"};fillProfileForm();writeLocal(LOCAL_KEYS.profile,profileData);document.getElementById("profileStatus").textContent="Profile fields cleared on this browser.";document.getElementById("navAvatar").textContent="S"});
+document.getElementById("browseWishlist").addEventListener("click",()=>{closeProfile();wishlistOnly=true;renderProducts();document.getElementById("collection").scrollIntoView({behavior:"smooth"})});
+document.getElementById("orderNoteForm").addEventListener("submit",e=>{e.preventDefault();const reference=document.getElementById("orderReference").value.trim(),date=document.getElementById("orderDate").value,note=document.getElementById("orderNote").value.trim();if(!reference&&!note){document.getElementById("orderStatus").textContent="Add a reference or note first.";return}savedOrderNotes.unshift({reference,date,note,createdAt:new Date().toISOString()});if(writeLocal(LOCAL_KEYS.orders,savedOrderNotes)){e.target.reset();document.getElementById("orderStatus").textContent="Personal note saved. It is not a verified order or status.";renderProfileOrders()}});
+document.getElementById("addressForm").addEventListener("submit",e=>{e.preventDefault();const a={label:document.getElementById("addressLabel").value.trim()||"Address",recipient:document.getElementById("addressRecipient").value.trim(),line:document.getElementById("addressLine").value.trim(),city:document.getElementById("addressCity").value.trim(),pin:document.getElementById("addressPin").value.trim()};if(!a.recipient||!a.line||!a.city){document.getElementById("addressStatus").textContent="Please add a recipient, address and city.";return}savedAddresses.unshift(a);if(writeLocal(LOCAL_KEYS.addresses,savedAddresses)){e.target.reset();document.getElementById("addressStatus").textContent="Address saved on this device only.";renderProfileAddresses()}});
+document.getElementById("exportProfile").addEventListener("click",()=>{const data={profile:profileData,wishlist:[...wishlist],cart,addresses:savedAddresses,orderNotes:savedOrderNotes,exportedAt:new Date().toISOString(),note:"Local demo data only. Order notes are not verified store orders."};const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="ssv-profile-data.json";a.click();URL.revokeObjectURL(url);document.getElementById("securityStatus").textContent="A copy of your local data was prepared for export."});
+document.getElementById("clearLocalData").addEventListener("click",()=>{if(!confirm("Delete this website's saved profile, wishlist, bag, addresses and personal order notes from this browser? This cannot be undone."))return;Object.values(LOCAL_KEYS).forEach(k=>localStorage.removeItem(k));profileData={name:"",phone:"",email:"",style:"Heritage classics"};savedAddresses=[];savedOrderNotes=[];cart={};wishlist=new Set();renderProducts();renderCart();fillProfileForm();renderProfileWishlist();renderProfileOrders();renderProfileAddresses();document.getElementById("navAvatar").textContent="S";document.getElementById("securityStatus").textContent="Saved local data cleared from this browser."});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeProfile()}});
+
+fillProfileForm();document.getElementById("navAvatar").textContent=(profileData.name||"S").charAt(0).toUpperCase()||"S";
+</script>
+</body></html>
